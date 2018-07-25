@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS = false; L_NO_TOUCH = false; L_DISABLE_3D = false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawgit.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <style> #map_dfec47c6197b488da8ea567e96ab3585 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_dfec47c6197b488da8ea567e96ab3585" ></div>
+        
+</body>
+<script>    
+    
+
+            
+                var bounds = null;
+            
+
+            var map_dfec47c6197b488da8ea567e96ab3585 = L.map(
+                                  'map_dfec47c6197b488da8ea567e96ab3585',
+                                  {center: [49.574,21.868],
+                                  zoom: 6,
+                                  maxBounds: bounds,
+                                  layers: [],
+                                  worldCopyJump: false,
+                                  crs: L.CRS.EPSG3857
+                                 });
+            
+        
+    
+            var tile_layer_73ff396f02eb438cb0dfec5d2f567d05 = L.tileLayer(
+                'https://{s}.tiles.mapbox.com/v3/mapbox.world-bright/{z}/{x}/{y}.png',
+                {
+  "attribution": null, 
+  "detectRetina": false, 
+  "maxZoom": 9, 
+  "minZoom": 5, 
+  "noWrap": false, 
+  "subdomains": "abc"
+}
+                ).addTo(map_dfec47c6197b488da8ea567e96ab3585);
+        
+    
+
+            var marker_dabeb38e44c04b03af8ccc07902700a1 = L.marker(
+                [49.574,21.868],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_dfec47c6197b488da8ea567e96ab3585);
+            
+    
+
+                var icon_ec9cd3a1357b41278c69cc8158c44321 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_dabeb38e44c04b03af8ccc07902700a1.setIcon(icon_ec9cd3a1357b41278c69cc8158c44321);
+            
+    
+            var popup_43ece3355280417abf08e47acddc25ec = L.popup({maxWidth: '300'});
+
+            
+                var html_e903fab53d1e45e8961305386460bc52 = $('<div id="html_e903fab53d1e45e8961305386460bc52" style="width: 100.0%; height: 100.0%;">The town of Rymanow</div>')[0];
+                popup_43ece3355280417abf08e47acddc25ec.setContent(html_e903fab53d1e45e8961305386460bc52);
+            
+
+            marker_dabeb38e44c04b03af8ccc07902700a1.bindPopup(popup_43ece3355280417abf08e47acddc25ec);
+
+            
+        
+    
+
+            var marker_e58bde0dac86475ba08cb1f0216c5b88 = L.marker(
+                [50.174,19.868],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_dfec47c6197b488da8ea567e96ab3585);
+            
+    
+
+                var icon_85c9015eb3474c83be26e14e7d8af68a = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_e58bde0dac86475ba08cb1f0216c5b88.setIcon(icon_85c9015eb3474c83be26e14e7d8af68a);
+            
+    
+            var popup_566ad4cdaaa145cca6e6678dd1f3287d = L.popup({maxWidth: '300'});
+
+            
+                var html_ab5c390d6a484a86be80b870caa9136f = $('<div id="html_ab5c390d6a484a86be80b870caa9136f" style="width: 100.0%; height: 100.0%;">An unknown place</div>')[0];
+                popup_566ad4cdaaa145cca6e6678dd1f3287d.setContent(html_ab5c390d6a484a86be80b870caa9136f);
+            
+
+            marker_e58bde0dac86475ba08cb1f0216c5b88.bindPopup(popup_566ad4cdaaa145cca6e6678dd1f3287d);
+
+            
+        
+    
+            var feature_group_8d8d390abef84d2480e10c03ea9e71f8 = L.featureGroup(
+                ).addTo(map_dfec47c6197b488da8ea567e96ab3585);
+        
+</script>
